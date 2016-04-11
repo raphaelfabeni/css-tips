@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>animation-fill-mode - forwards</title>
+  <style>
+    .item {
+      padding: 50px 20px;
+      color: #fff;
+      background-color: #444;
+      margin: 15px 0;
+      width: 480px;
+      text-align: center;
+      font-size: 48px;
+    }
+
+    @keyframes move {
+      from {
+        transform: translateX(0);
+        background-color: lightBlue; 
+      }
+
+      to {
+        transform: translateX(600px);
+        background-color: darkRed; 
+      }
+    }
+    .item--normal { animation: move 2s 2s forwards linear; }
+    .item--normal-even { animation: move 2s 2s 2 forwards linear; }
+    .item--normal-odd { animation: move 2s 2s 3 forwards linear; }
+    .item--reverse { animation: move 2s 2s reverse forwards linear; }
+    .item--reverse-even { animation: move 2s 2s 2 reverse forwards linear; }
+    .item--reverse-odd { animation: move 2s 2s 3 reverse forwards linear; }
+    .item--alternate-even { animation: move 2s 2s 2 alternate forwards linear; }
+    .item--alternate-odd { animation: move 2s 2s 3 alternate forwards linear; }
+    .item--alternate-reverse-even { animation: move 2s 2s 2 alternate-reverse forwards linear; }
+    .item--alternate-reverse-odd { animation: move 2s 2s 3 alternate-reverse forwards linear; }
+  </style>
+</head>
+<body>
+  <div class="item item--normal">normal</div>
+  <div class="item item--normal-even">normal (par)</div>
+  <div class="item item--normal-odd">normal (ímpar)</div>
+  <div class="item item--reverse">reverse</div>
+  <div class="item item--reverse-even">reverse (par)</div>
+  <div class="item item--reverse-odd">reverse (ímpar)</div>
+  <div class="item item--alternate-even">alternate (par)</div>
+  <div class="item item--alternate-odd">alternate (ímpar)</div>
+  <div class="item item--alternate-reverse-even">alternate-reverse (par)</div>
+  <div class="item item--alternate-reverse-odd">alternate-reverse (ímpar)</div>
+</body>
+</html>

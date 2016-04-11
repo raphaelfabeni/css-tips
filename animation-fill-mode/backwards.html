@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>animation-fill-mode - backwards</title>
+  <style>
+    .item {
+      padding: 50px 20px;
+      color: #fff;
+      background-color: #444;
+      margin: 15px 0;
+      width: 200px;
+      text-align: center;
+      font-size: 48px;
+    }
+
+    @keyframes move {
+      from {
+        transform: translateX(0);
+        background-color: lightBlue; 
+      }
+
+      to {
+        transform: translateX(400px);
+        background-color: darkRed; 
+      }
+    }
+    .item--normal { animation: move 2s 2s backwards linear; }
+    .item--alternate { animation: move 2s 2s 2 alternate backwards linear; }
+    .item--reverse { animation: move 2s 2s reverse backwards linear; }
+    .item--alternate-reverse { animation: move 2s 2s 2 alternate-reverse backwards linear; }
+  </style>
+</head>
+<body>
+  <div class="item item--normal">normal</div>
+  <div class="item item--alternate">alternate</div>
+  <div class="item item--reverse">reverse</div>
+  <div class="item item--alternate-reverse">alternate-reverse</div>
+</body>
+</html>

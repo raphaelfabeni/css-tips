@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Count - responsive</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+  }
+  .list li {
+    float: left;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #333;
+    border: solid 10px #999;
+    padding: 30px 15px;
+  }
+  .list--3 li {
+    width: 33.3%;
+  }
+  .list--4 li {
+    width: 25%;
+  }
+  .list--5 li {
+    width: 20%;
+  }
+  @media screen and (max-width: 768px) {
+    .list li {
+      width: 100%;
+    }
+  }
+</style>
+<body>
+  <ul class="list list--3">
+    <li>#01</li>
+    <li>#02</li>
+    <li>#03</li>
+  </ul>
+  <ul class="list list--4">
+    <li>#01</li>
+    <li>#02</li>
+    <li>#03</li>
+    <li>#04</li>
+  </ul>
+  <ul class="list list--5">
+    <li>#01</li>
+    <li>#02</li>
+    <li>#03</li>
+    <li>#04</li>
+    <li>#05</li>
+  </ul>
+</body>
+</html>

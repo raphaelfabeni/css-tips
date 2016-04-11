@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>nth-last-child</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+  }
+  li {
+    float: left;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #333;
+    border: solid 10px #999;
+    padding: 30px 15px;
+  }
+  .list li:nth-last-child(3) {
+    background-color: blue;
+  }
+  .list li:nth-last-child(4) {
+    background-color: green;
+  }
+  .list li:nth-last-child(5) {
+    background-color: red;
+  }
+</style>
+<body>
+  <ul class="list">
+    <li>#01</li>
+    <li>#02</li>
+    <li>#03</li>
+  </ul>
+  <ul class="list">
+    <li>#01</li>
+    <li>#02</li>
+    <li>#03</li>
+    <li>#04</li>
+  </ul>
+  <ul class="list">
+    <li>#01</li>
+    <li>#02</li>
+    <li>#03</li>
+    <li>#04</li>
+    <li>#05</li>
+  </ul>
+</body>
+</html>

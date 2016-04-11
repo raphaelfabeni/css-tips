@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>currentColor and inherit</title>
+  <style>
+  body {
+    margin: 0;
+    text-align: center;
+  }
+  p {
+    color: #fff;
+  }
+  .box {
+    color: #666;
+    border: solid 1px currentColor;
+    /*
+      border: solid 1px;
+     */
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+  }
+
+  .box__item {
+    padding: 10px;
+  }
+
+  .box--currentColor .box__item {
+    background-color: currentColor;
+  }
+
+  .box--inherit .box__item {
+    background-color: inherit;
+  }
+  </style>
+</head>
+<body>
+  <div class="box box--currentColor">
+    <div class="box__item">
+      <p>I'm using currentColor</p>
+    </div>
+  </div>
+  <div class="box box--inherit">
+    <div class="box__item">
+      <p>I'm using inherit</p>
+    </div>
+  </div>
+</body>
+</html>

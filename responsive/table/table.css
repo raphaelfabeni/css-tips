@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after { box-sizing: border-box; }
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+  border: solid 1px #bbb;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+table th,
+table td {
+  padding: 10px;
+  line-height: 1;
+  vertical-align: top;
+  text-align: center;
+  border: solid 1px #bbb;
+}
+
+table th {
+  vertical-align: bottom;
+  background-color: #f5f5f5;
+  font-weight: bold;
+}

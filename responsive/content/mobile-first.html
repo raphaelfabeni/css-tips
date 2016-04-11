@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mobile first - Responsive</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+  }
+  li {
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #333;
+    border: solid 10px #999;
+    padding: 30px 15px;
+  }
+  @media screen and (min-width: 768px) {
+    li {
+      float: left;
+      width: 20%;
+    }
+  }
+</style>
+<body>
+  <ul>
+    <li>#01</li>
+    <li>#02</li>
+    <li>#03</li>
+    <li>#04</li>
+    <li>#05</li>
+  </ul>
+</body>
+</html>

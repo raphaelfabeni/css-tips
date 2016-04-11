@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="table.css">
+  <title>Table</title>
+  <style>
+  @media screen and (max-width: 1000px) {
+    table {
+      border: none;
+    }
+
+    table, thead, tbody, th, td, tr { 
+      display: block; 
+    }
+
+    thead tr { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    table tr + tr {
+      margin-top: 20px;
+    }
+
+    table td { 
+      position: relative;
+      text-align: left;
+      padding-left: calc(30% + 10px);
+      border: solid 1px #bbb;
+    }
+
+    table td + td {
+      border-top: none;
+    }
+    
+    table td:before {
+      background-color: #f5f5f5;
+      border-right: solid 1px #bbb;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30%;
+      padding-right: 10px;
+      height: 100%;
+      padding-top: 10px;
+      text-align: right;
+      white-space: nowrap;
+    }
+    
+    table td:nth-of-type(1):before { content: 'Name'; }
+    table td:nth-of-type(2):before { content: 'Title #1'; }
+    table td:nth-of-type(3):before { content: 'Title #2'; }
+    table td:nth-of-type(4):before { content: 'Title #3'; }
+    table td:nth-of-type(5):before { content: 'Title #4'; }
+    table td:nth-of-type(6):before { content: 'Title #5'; }
+    table td:nth-of-type(7):before { content: 'Title #6'; }
+    table td:nth-of-type(8):before { content: 'Title #7'; }
+    table td:nth-of-type(9):before { content: 'Title #8'; }
+    table td:nth-of-type(10):before { content: 'Title #9'; }
+    table td:nth-of-type(11):before { content: 'Title #10'; }
+  }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Title #1</th>
+        <th>Title #2</th>
+        <th>Title #3</th>
+        <th>Title #4</th>
+        <th>Title #5</th>
+        <th>Title #6</th>
+        <th>Title #7</th>
+        <th>Title #8</th>
+        <th>Title #9</th>
+        <th>Title #10</th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>Lorem ipsum.</td>
+          <td>CSS Rocks</td>
+          <td>We are the champions!</td>
+          <td>CSS Wins</td>
+          <td>Fatality!</td>
+          <td>Bazinga!</td>
+          <td>This is Sparta!</td>
+          <td>You shall not pass!</td>
+          <td>Bond, James Bond!</td>
+          <td>ET phone home.</td>
+          <td>I see dead people.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum.</td>
+          <td>CSS Rocks</td>
+          <td>We are the champions!</td>
+          <td>CSS Wins</td>
+          <td>Fatality!</td>
+          <td>Bazinga!</td>
+          <td>This is Sparta!</td>
+          <td>You shall not pass!</td>
+          <td>Bond, James Bond!</td>
+          <td>ET phone home.</td>
+          <td>I see dead people.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum.</td>
+          <td>CSS Rocks</td>
+          <td>We are the champions!</td>
+          <td>CSS Wins</td>
+          <td>Fatality!</td>
+          <td>Bazinga!</td>
+          <td>This is Sparta!</td>
+          <td>You shall not pass!</td>
+          <td>Bond, James Bond!</td>
+          <td>ET phone home.</td>
+          <td>I see dead people.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum.</td>
+          <td>CSS Rocks</td>
+          <td>We are the champions!</td>
+          <td>CSS Wins</td>
+          <td>Fatality!</td>
+          <td>Bazinga!</td>
+          <td>This is Sparta!</td>
+          <td>You shall not pass!</td>
+          <td>Bond, James Bond!</td>
+          <td>ET phone home.</td>
+          <td>I see dead people.</td>
+        </tr>
+      </tbody>
+    </thead>
+  </table>
+</body>
+</html>

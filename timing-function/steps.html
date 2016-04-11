@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>timing-function - steps</title>
+  <style>
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+
+    @keyframes cursor {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    h1 {
+      font-family: Consolas, Monaco, monospace;
+      font-weight: bold;
+      font-size: 120px;
+      border-right: .1em solid;
+      width: 21ch;
+      margin: 0 auto;
+      white-space: nowrap;
+      overflow: hidden; 
+      animation: typing 5s steps(21), 
+                 cursor .5s step-end infinite alternate;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>CSS Day Maceió Rocks!</h1>
+</body>
+</html>

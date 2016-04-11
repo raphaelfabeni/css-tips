@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>timing-function</title>
+  <style>
+    .item {
+      padding: 30px 20px;
+      color: #fff;
+      background-color: #444;
+      margin: 15px 0;
+      width: 250px;
+      text-align: center;
+      font-size: 48px;
+    }
+
+    @keyframes move {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(600px);
+      }
+    }
+    .item--linear { animation: move 2s linear forwards; }
+    .item--ease { animation: move 2s ease forwards; }
+    .item--ease-in { animation: move 2s ease-in forwards; }
+    .item--ease-out { animation: move 2s ease-out forwards; }
+    .item--ease-in-out { animation: move 2s ease-in-out forwards; }
+    .item--steps { animation: move 2s steps(4) forwards; }
+  </style>
+</head>
+<body>
+  <div class="item item--linear">linear</div>
+  <div class="item item--ease">ease</div>
+  <div class="item item--ease-in">ease-in</div>
+  <div class="item item--ease-out">ease-out</div>
+  <div class="item item--ease-in-out">ease-in-out</div>
+  <div class="item item--steps">steps</div>
+</body>
+</html>

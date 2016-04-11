@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>animation-fill-mode</title>
+  <style>
+    .item {
+      padding: 50px 20px;
+      color: #fff;
+      background-color: #444;
+      margin: 15px 0;
+      width: 200px;
+      text-align: center;
+      font-size: 48px;
+    }
+
+    @keyframes move {
+      from {
+        transform: translateX(0);
+        background-color: lightBlue; 
+      }
+
+      to {
+        transform: translateX(400px);
+        background-color: darkRed; 
+      }
+    }
+
+    .item--none { animation: move 2s 2s linear; }
+    .item--forwards { animation: move 2s 2s forwards linear; }
+    .item--backwards { animation: move 2s 2s backwards linear; }
+    .item--both { animation: move 2s 2s both linear; }
+  </style>
+</head>
+<body>
+  <div class="item item--none">none</div>
+  <div class="item item--forwards">forwards</div>
+  <div class="item item--backwards">backwards</div>
+  <div class="item item--both">both</div>
+</body>
+</html>

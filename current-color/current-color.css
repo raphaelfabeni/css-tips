@@ -1,0 +1,7 @@
+body { color: green; }
+
+div {
+  color: currentColor;
+  box-shadow: 1px 1px 1px 1px currentColor;
+  outline: dotted 1px currentColor;
+}
