@@ -1,10 +1,10 @@
 # CSS tips
 
-![CSS tips](https://cloud.githubusercontent.com/assets/1345662/14589646/b2b2ed1c-04bd-11e6-9c02-90d3409024b1.png)
+![CSS tips](https://cloud.githubusercontent.com/assets/1345662/14589742/e3e58b0e-04bf-11e6-848e-ca19a937933e.png)
 
 This repository has some examples of talk *CSS tips*, which discuss about:
 
 * responsive content and tables.
-* `currentColor`
-* `animation fill-mode` and it's relation with `animation-direction`
-* `animation`, `steps` and `ch`
+* `currentColor`.
+* `animation fill-mode` and it's relation with `animation-direction`.
+* `animation`, `steps` and `ch`.
