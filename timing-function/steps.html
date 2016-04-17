@@ -4,29 +4,37 @@
   <meta charset="UTF-8">
   <title>timing-function - steps</title>
   <style>
-    @keyframes typing {
+    @keyframes typingRocks {
       from {
         width: 0;
+      }
+      to {
+        width: 21ch;
       }
     }
 
     @keyframes cursor {
+      0%,
+      100% {
+        border-color: currentColor;
+      }
+
       50% {
         border-color: transparent;
       }
     }
 
     h1 {
+      color: #444;
       font-family: Consolas, Monaco, monospace;
       font-weight: bold;
       font-size: 120px;
       border-right: .1em solid;
-      width: 21ch;
-      margin: 0 auto;
+      margin: 0;
       white-space: nowrap;
-      overflow: hidden; 
-      animation: typing 5s steps(21), 
-                 cursor .5s step-end infinite alternate;
+      overflow: hidden;
+      animation: cursor .5s step-end infinite alternate,
+                 typingRocks 5s steps(21) forwards;
     }
 
   </style>
