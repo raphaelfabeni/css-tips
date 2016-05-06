@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal transition</title>
+  <style>
+  .content {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .modal {
+    position: fixed;
+    background-color: rgba(0,0,0,.8);
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition:
+      opacity .3s  .3s ease,
+      width   .01s .6s, 
+      height  .01s .6s;
+  }
+
+  .modal.is-open {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease;
+  }
+
+  .modal.is-open .modal-box {
+    opacity: 1;
+    transition: all .3s .3s ease;
+    transform: translateY(0);
+  }
+
+  .modal-box {
+    opacity: 0;
+    transition: all .3s ease;
+    transform: translateY(-25px);
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    margin: 100px auto 0;
+    padding: 20px;
+  }
+  </style>
+</head>
+<body>
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-box">
+      <button id="close-modal">Close</button>
+      <h2>Lorem ipsum dolor.</h2>
+    </div>
+  </div>
+  
+  <!-- Content -->
+  <div class="content">
+    <!-- -->
+    <button id="show-modal">View modal</button>
+    <!-- -->
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident architecto ab sequi nesciunt repellat non totam animi ipsam veniam obcaecati esse nemo placeat doloribus, voluptatum maiores aperiam laborum, dignissimos blanditiis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident architecto ab sequi nesciunt repellat non totam animi ipsam veniam obcaecati esse nemo placeat doloribus, voluptatum maiores aperiam laborum, dignissimos blanditiis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident architecto ab sequi nesciunt repellat non totam animi ipsam veniam obcaecati esse nemo placeat doloribus, voluptatum maiores aperiam laborum, dignissimos blanditiis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident architecto ab sequi nesciunt repellat non totam animi ipsam veniam obcaecati esse nemo placeat doloribus, voluptatum maiores aperiam laborum, dignissimos blanditiis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident architecto ab sequi nesciunt repellat non totam animi ipsam veniam obcaecati esse nemo placeat doloribus, voluptatum maiores aperiam laborum, dignissimos blanditiis!</p>
+  </div>
+
+  <script>
+    var showModal = document.getElementById('show-modal');
+    var closeModal = document.getElementById('close-modal');
+    var modal = document.getElementById('modal');
+
+    showModal.addEventListener('click', function() {
+      modal.classList.add('is-open');
+    }, false);
+
+    closeModal.addEventListener('click', function() {
+      modal.classList.remove('is-open');
+    }, false);
+  </script>
+</body>
+</html>
