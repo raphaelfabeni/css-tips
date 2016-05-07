@@ -5,6 +5,7 @@
 This repository has some examples of talk *CSS tips*, which discuss about:
 
 * responsive content and tables.
+* `transition` effects.
 * `currentColor`.
 * `animation fill-mode` and it's relation with `animation-direction`.
 * `animation`, `steps` and `ch`.
